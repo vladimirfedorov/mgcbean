@@ -8,4 +8,4 @@ MGCBEAN is a small hobby operating system. It consists of three builds:
 
 .IMG files are [BOCHS](http://bochs.sourceforge.net/) images with pre-installed MGCBEAN OS.
 
-Compile with [fasm](http://flatassembler.net/ "flat assembler")
+Compile with [fasm](http://flatassembler.net/ "flat assembler").
