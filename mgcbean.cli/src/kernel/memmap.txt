@@ -1,0 +1,35 @@
+system memory mapping description
+
+8M of memory is reserved for system objects and pre-mapped before memory manager initialization.
+
+
+        0   1   2   3   4   5   6   7   8   9   A   B   C   D   E   F     x10000h
+     0h [xxx|kernel                 |stk|GDT|   |xxx|xxx|xxx|xxx|xxx|xxx] 1M
+                                              |
+                                             90000-907FF - IDT
+                                             90800-909FF - VESA info
+                                             90A00-90AFF - VESA mode info
+                                             91000-91FFF - PDT
+                                             92000-93FFF - allocated by kernel memory blocks
+                                             98000-9FFFF - system variables (kernel.inc)
+
+        0   1   2   3   4   5   6   7   8   9   A   B   C   D   E   F     x10000h
+     1M [  UMM  |KHP|   |   |   |   |   |           Task list           ] 2M
+
+
+     4M .. 8M - PTEs
+
+
+
+PDT: 4k pages
+
+UMM: 128k used memory map (4G)
+PTEs: 4M 
+KHP: Kernel heap pointers (4b pointer | 4b size) 64k (8k pointers)
+Task list: 512k (512 tasks)
+
+
+C0000000h-DFFFFFFFh - 512M video memory
+E0000000h-EFFFFFFFh - 256M kernel heap
+FEE00000h-FFFFFFFFh -  18M APIC & BIOS
+

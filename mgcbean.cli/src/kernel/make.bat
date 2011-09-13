@@ -1,0 +1,1 @@
+fasm kernel.asm kernel

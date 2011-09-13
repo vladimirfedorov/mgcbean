@@ -1,0 +1,7 @@
+header
++00  2  signature 'SYSFNT'
++06h  heigth
++07h  width (always must be 8)
++08h  bytes per character
++10h font data
+
