@@ -85,6 +85,6 @@ It runs in Bochs only, connect `mgcbean.gfx.img` as a floppy disk.
 
 --
 
-This code is released under the MIT license.
+This code is released under the [MIT license](./LICENSE).
 
 Compile with [fasm](http://flatassembler.net/ "flat assembler").
