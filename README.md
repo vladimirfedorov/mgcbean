@@ -38,21 +38,37 @@ qemu-system-i386 -fda mgcbean.dos.img -m 20
 ### Screenshots
 
 ![MGCBEAN.DOS command list](doc/image/mgcbean.dos-1.png)
+<br />*System command set*
+
 
 ![MGCBEAN.DOS runs programs](doc/image/mgcbean.dos-2.png)
+<br />*Running .com programms*
 
 ![MGCBEAN.DOS view file command](doc/image/mgcbean.dos-3.png)
+<br />*Viewing a file*
 
 
 ## MGCBEAN.CLI
 
-A 32-bit version of the system; never finished.
+A 32-bit version of the system with multitasking; never finished.
 
 ### How to run
 
-```
-qemu-system-i386 -fda mgcbean.cli.img -m 20
-```
+It runs in Bochs only, connect `mgcbean.cli.img` as a floppy disk.
+
+### Screenshots
+
+![MGCBEAN.DOS view file command](doc/image/mgcbean.cli-1.png)
+<br />*A progress bar*
+
+![MGCBEAN.DOS view file command](doc/image/mgcbean.cli-2.png)
+<br />*System command set*
+
+![MGCBEAN.DOS view file command](doc/image/mgcbean.cli-3.png)
+<br />*There are two tasks running: the main task (the CLI interface on screen) and "Task 2", that prints "I'm task 2!" when receives a message.*
+
+![MGCBEAN.DOS view file command](doc/image/mgcbean.cli-4.png)
+<br />*Memory dump viewer*
 
 ## MGCBEAN.GFX
 
@@ -60,9 +76,15 @@ A 32-bit version of the system with graphic mode; bitmap fonts is the only thing
 
 ### How to run
 
-```
-qemu-system-i386 -fda mgcbean.gfx.img -m 20
-```
+It runs in Bochs only, connect `mgcbean.gfx.img` as a floppy disk.
 
+### Screenshots
+
+![MGCBEAN.DOS view file command](doc/image/mgcbean.gfx-1.png)
+
+
+--
+
+This code is released under the MIT license.
 
 Compile with [fasm](http://flatassembler.net/ "flat assembler").
